@@ -19,6 +19,7 @@ class ContactDao {
     Map<String, dynamic> contactMap = _toMap(contact);
     return db.insert(_tableName, contactMap);
   }
+  // teste
 
   Future<List<Contact>> findAll() async {
     final Database db = await getDatabase();
